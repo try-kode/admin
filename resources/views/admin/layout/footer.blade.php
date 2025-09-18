@@ -1,95 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login</title>
-
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ asset('admin/plugins/fontawesome-free/css/all.min.css') }}  ">
-  <!-- icheck bootstrap -->
-  <link rel="stylesheet" href="{{ asset('admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css') }}  ">
-
-    <!-- Toastr -->
-  <link rel="stylesheet" href="{{ asset('admin/plugins/toastr/toastr.min.css') }}  ">
-
-
-  <!-- Theme style -->
-  <link rel="stylesheet" href="{{ asset('admin/dist/css/adminlte.min.css') }}  ">
-</head>
-<body class="hold-transition login-page">
-<div class="login-box">
-  <div class="login-logo">
-    <a href="#"><b>Viheakode</b></a>
-  </div>
-  <!-- /.login-logo -->
-  <div class="card">
-    <div class="card-body login-card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
-
-      <form id="frmLogin">
-        <div class="input-group mb-3">
-          <input type="text" id="username" name="username" class="form-control" placeholder="Username">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-envelope"></span>
-            </div>
-          </div>
-        </div>
-        <div class="input-group mb-3">
-          <input type="password" id="password" name="password" class="form-control" placeholder="Password">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-8">
-            <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
-                Remember Me
-              </label>
-            </div>
-          </div>
-          <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block btnLogin">Sign In</button>
-          </div>
-          <!-- /.col -->
-        </div>
-      </form>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
     </div>
-    <!-- /.login-card-body -->
-  </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
 </div>
-<!-- /.login-box -->
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
-<script src="{{ asset('admin/plugins/jquery/jquery.min.js') }}  "></script>
+<script src="{{ asset('admin/plugins/jquery/jquery.min.js') }} "></script>
 <!-- Bootstrap 4 -->
-<script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }}  "></script>
+<script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
 
 <!-- Toastr -->
 <script src="{{ asset('admin/plugins/toastr/toastr.min.js') }} "></script>
 
 
 <!-- AdminLTE App -->
-<script src="{{ asset('admin/dist/js/adminlte.min.js') }}  "></script>
-<script src="{{ asset('admin/js/auth.js') }}  "></script>
+<script src="{{ asset('admin/dist/js/adminlte.min.js') }} "></script>
+
 
 
 <script>
-  $(function() {
-    // var Toast = Swal.mixin({
-    //   toast: true,
-    //   position: 'top-end',
-    //   showConfirmButton: false,
-    //   timer: 3000
-    // });
+//   $(function() {
+//     var Toast = Swal.mixin({
+//       toast: true,
+//       position: 'top-end',
+//       showConfirmButton: false,
+//       timer: 3000
+//     });
 
     // $('.swalDefaultSuccess').click(function() {
     //   Toast.fire({
@@ -236,7 +190,6 @@
     // });
   });
 </script>
-
 
 </body>
 </html>
