@@ -17,6 +17,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Toastr -->
   <link rel="stylesheet" href="{{ asset('admin/plugins/toastr/toastr.min.css') }}  ">
 
+  <!-- Select2 -->
+  <link rel="stylesheet" href="{{ asset('admin/plugins/select2/css/select2.min.css') }}  ">
+  <link rel="stylesheet" href="{{ asset('admin/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}  ">
+  <!-- Bootstrap4 Duallistbox -->
+  <link rel="stylesheet" href="{{ asset('admin/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css') }}  ">
 
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('admin/dist/css/adminlte.min.css') }} ">

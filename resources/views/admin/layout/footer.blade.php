@@ -30,14 +30,28 @@
 <!-- Toastr -->
 <script src="{{ asset('admin/plugins/toastr/toastr.min.js') }} "></script>
 
+<!-- Select2 -->
+<script src="{{ asset('admin/plugins/select2/js/select2.full.min.js') }}  "></script>
+<!-- Bootstrap4 Duallistbox -->
+<script src="{{ asset('admin/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js') }}  "></script>
 
 <!-- AdminLTE App -->
 <script src="{{ asset('admin/dist/js/adminlte.min.js') }} "></script>
+
+<script src="{{ asset('admin/js/user.js') }} "></script>
 
 
 
 <script>
   $(function() {
+
+    $('.select2').select2()
+
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+
 //     var Toast = Swal.mixin({
 //       toast: true,
 //       position: 'top-end',
