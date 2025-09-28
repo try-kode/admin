@@ -31,6 +31,11 @@ $(".btnCreateUser").click(function(e){
 
 });
 
+// function deleteUser(uuid){
+//     alert("you clicked")
+// }
+
+
 
 function fetchAllUsers(){
     $.ajax({
@@ -46,13 +51,15 @@ function fetchAllUsers(){
                     <div class="col-lg-3">
                         <div class='card'>
                             <div class="card-body">
-                                <h3>${element.username}</h3>
-                                <hr>
+                                <h3><i class="fas fa-user"></i></h3>
+                                <h1>${element.username}</h1>
                                 <p>${element.role}</p>
+                                
+                                
                             </div>
                             <div class="card-footer">
                                 <a href="" class="btn btn-info btn-flat"><i class="fas fa-eye"></i></a>
-                                <a href="" class="btn btn-danger btn-flat"><i class="fas fa-trash-alt"></i></a>
+                                <a href="javascript:void(0)" class="btn btn-danger btnDeleteUser" recordId="${ element.userId }"><i class="fas fa-trash-alt"></i></a>
                                 <a href="" class="btn btn-warning btn-flat"><i class="fas fa-edit"></i></a>
                             </div>
                             
@@ -64,3 +71,17 @@ function fetchAllUsers(){
         },
     })
 }
+
+$(document).on("click", ".btnDeleteUser", function(e){
+    
+    const id = $(this).attr("recordId")
+
+    $.ajax({
+            url: "https://api.viheakode.online/api/v1/user/"+id,
+            method: "DELETE",
+            success: function(response) {
+                toastr.success('<b>Notification</b><p>'+response.message+'</p>')
+                fetchAllUsers();
+            },
+        })
+})
