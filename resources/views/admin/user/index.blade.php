@@ -25,33 +25,12 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <a href="/admin/user/create" class="btn btn-primary">Create User</a>
+                    <div class="col-lg-3">
+                        <a href="/admin/user/create" class="btn btn-primary btn-flat">Create New</a>
                     </div>
                 </div>
                 <br>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <table id="example3" class="table table-bordered table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Username</th>
-                                            <th>Role</th>
-                                            <th>Status</th>
-                                            <th>Publisher</th>
-                                            <th>Date/Time</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="userTbody">
-                                        
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row" id="cardUsers">
                 </div>
 
                 <!-- /.row -->

@@ -31,28 +31,36 @@ $(".btnCreateUser").click(function(e){
 
 });
 
+
 function fetchAllUsers(){
     $.ajax({
         url: "https://api.viheakode.online/api/v1/user/",
         method: "GET",
         success: function(response) {
             let rows = response.data
-            let tbody = ``
+            let cardUsers = ``
             let idx = 0
             rows.forEach(element => {
                 idx++
-                tbody +=`
-                    <tr>
-                        <td>${idx}</td>
-                        <td>${element.username}</td>
-                        <td>${element.role}</td>
-                        <td>${element.status}</td>
-                        <td>${element.publisher}</td>
-                        <td>${element.publishedDate}</td>
-                    </tr>
+                cardUsers +=`
+                    <div class="col-lg-3">
+                        <div class='card'>
+                            <div class="card-body">
+                                <h3>${element.username}</h3>
+                                <hr>
+                                <p>${element.role}</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="" class="btn btn-info btn-flat"><i class="fas fa-eye"></i></a>
+                                <a href="" class="btn btn-danger btn-flat"><i class="fas fa-trash-alt"></i></a>
+                                <a href="" class="btn btn-warning btn-flat"><i class="fas fa-edit"></i></a>
+                            </div>
+                            
+                        </div>
+                    </div>
                 `
             })
-            $("#userTbody").html(tbody)
+            $("#cardUsers").html(cardUsers)
         },
     })
 }

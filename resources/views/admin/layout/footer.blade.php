@@ -55,7 +55,7 @@
 <!-- AdminLTE App -->
 <script src="{{ asset('admin/dist/js/adminlte.min.js') }} "></script>
 
-<script src="{{ asset('admin/js/userii.js') }} "></script>
+<script src="{{ asset('admin/js/user.js') }} "></script>
 
 
 <script>
