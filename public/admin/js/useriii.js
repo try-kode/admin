@@ -51,8 +51,8 @@ function fetchAllUsers(){
                     <div class="col-lg-3">
                         <div class='card'>
                             <div class="card-body">
-                                <h3><i class="fas fa-user"></i></h3>
-                                <h1>${element.username}</h1>
+                                <h5><i class="fas fa-user"></i></h5>
+                                <h3>${element.username}</h3>
                                 <p>${element.role}</p>
                                 
                                 
