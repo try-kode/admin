@@ -23,6 +23,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Bootstrap4 Duallistbox -->
   <link rel="stylesheet" href="{{ asset('admin/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css') }}  ">
 
+
+  <!-- DataTables -->
+  <link rel="stylesheet" href="https://cdn.viheakode.online/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="https://cdn.viheakode.online/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="https://cdn.viheakode.online/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('admin/dist/css/adminlte.min.css') }} ">
 </head>
