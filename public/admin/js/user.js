@@ -46,7 +46,6 @@ function fetchAllUsers(){
                         <td>${idx}</td>
                         <td>${element.username}</td>
                         <td>${element.role}</td>
-                        
                         <td>${element.status}</td>
                         <td>${element.publisher}</td>
                         <td>${element.publishedDate}</td>
