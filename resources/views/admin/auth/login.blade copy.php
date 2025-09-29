@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Login</title>
 
   <!-- Google Font: Source Sans Pro -->
@@ -58,7 +57,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block btnLogin" actionURL="/ajxlogin">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block btnLogin">Sign In</button>
           </div>
           <!-- /.col -->
         </div>
@@ -80,6 +79,7 @@
 
 <!-- AdminLTE App -->
 <script src="{{ asset('admin/dist/js/adminlte.min.js') }}  "></script>
+<script src="{{ asset('admin/js/auth.js') }}  "></script>
 
 {{-- <script src="{{ asset('admin/js/auth.js') }}  "></script> --}}
 <script src="{{ asset('admin/js/authii.js') }}  "></script>

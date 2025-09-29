@@ -1,254 +1,93 @@
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-    <div class="p-3">
-      <h5>Title</h5>
-      <p>Sidebar content</p>
-    </div>
+      <!-- Control sidebar content goes here -->
+      <div class="p-3">
+          <h5>Title</h5>
+          <p>Sidebar content</p>
+      </div>
   </aside>
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
-      Anything you want
-    </div>
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+      <!-- To the right -->
+      <div class="float-right d-none d-sm-inline">
+          Anything you want
+      </div>
+      <!-- Default to the left -->
+      <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
   </footer>
-</div>
-<!-- ./wrapper -->
+  </div>
+  <!-- ./wrapper -->
 
-<!-- REQUIRED SCRIPTS -->
+  <!-- REQUIRED SCRIPTS -->
 
-<!-- jQuery -->
-<script src="{{ asset('admin/plugins/jquery/jquery.min.js') }} "></script>
-<!-- Bootstrap 4 -->
-<script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
+  <!-- jQuery -->
+  <script src="{{ asset('admin/plugins/jquery/jquery.min.js') }} "></script>
+  <!-- Bootstrap 4 -->
+  <script src="{{ asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
 
-<!-- Toastr -->
-<script src="{{ asset('admin/plugins/toastr/toastr.min.js') }} "></script>
+  <!-- Toastr -->
+  <script src="{{ asset('admin/plugins/toastr/toastr.min.js') }} "></script>
 
-<!-- Select2 -->
-<script src="{{ asset('admin/plugins/select2/js/select2.full.min.js') }}  "></script>
-<!-- Bootstrap4 Duallistbox -->
-<script src="{{ asset('admin/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js') }}  "></script>
-
-
-
-<!-- DataTables  & Plugins -->
-<script src="https://cdn.viheakode.online/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="https://cdn.viheakode.online/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="https://cdn.viheakode.online/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="https://cdn.viheakode.online/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="https://cdn.viheakode.online/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-<script src="https://cdn.viheakode.online/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-<script src="https://cdn.viheakode.online/plugins/jszip/jszip.min.js"></script>
-<script src="https://cdn.viheakode.online/plugins/pdfmake/pdfmake.min.js"></script>
-<script src="https://cdn.viheakode.online/plugins/pdfmake/vfs_fonts.js"></script>
-<script src="https://cdn.viheakode.online/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-<script src="https://cdn.viheakode.online/plugins/datatables-buttons/js/buttons.print.min.js"></script>
-<script src="https://cdn.viheakode.online/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+  <!-- Select2 -->
+  <script src="{{ asset('admin/plugins/select2/js/select2.full.min.js') }}  "></script>
+  <!-- Bootstrap4 Duallistbox -->
+  <script src="{{ asset('admin/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js') }}  "></script>
 
 
-<!-- AdminLTE App -->
-<script src="{{ asset('admin/dist/js/adminlte.min.js') }} "></script>
 
-<script src="{{ asset('admin/js/useriii.js') }} "></script>
-
-
-<script>
-  $(function () {
-    $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-    $('#example2').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
-      "responsive": true,
-    });
-
-    $('#example3').DataTable({
-      "paging": false,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": false,
-      "autoWidth": false,
-      "responsive": true,
-    });
-  });
-</script>
+  <!-- DataTables  & Plugins -->
+  <script src="https://cdn.viheakode.online/plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.viheakode.online/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="https://cdn.viheakode.online/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="https://cdn.viheakode.online/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="https://cdn.viheakode.online/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.viheakode.online/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script src="https://cdn.viheakode.online/plugins/jszip/jszip.min.js"></script>
+  <script src="https://cdn.viheakode.online/plugins/pdfmake/pdfmake.min.js"></script>
+  <script src="https://cdn.viheakode.online/plugins/pdfmake/vfs_fonts.js"></script>
+  <script src="https://cdn.viheakode.online/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.viheakode.online/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+  <script src="https://cdn.viheakode.online/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
 
-<script>
-  $(function() {
+  <!-- AdminLTE App -->
+  <script src="{{ asset('admin/dist/js/adminlte.min.js') }} "></script>
 
-    $('.select2').select2()
+  <script src="{{ asset('admin/js/useriii.js') }} "></script>
 
-    //Initialize Select2 Elements
-    $('.select2bs4').select2({
-      theme: 'bootstrap4'
-    })
 
-//     var Toast = Swal.mixin({
-//       toast: true,
-//       position: 'top-end',
-//       showConfirmButton: false,
-//       timer: 3000
-//     });
+  <script>
+      $(function() {
+          $("#example1").DataTable({
+              "responsive": true,
+              "lengthChange": false,
+              "autoWidth": false,
+              "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+          }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+          $('#example2').DataTable({
+              "paging": true,
+              "lengthChange": false,
+              "searching": false,
+              "ordering": true,
+              "info": true,
+              "autoWidth": false,
+              "responsive": true,
+          });
 
-    // $('.swalDefaultSuccess').click(function() {
-    //   Toast.fire({
-    //     icon: 'success',
-    //     title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.swalDefaultInfo').click(function() {
-    //   Toast.fire({
-    //     icon: 'info',
-    //     title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.swalDefaultError').click(function() {
-    //   Toast.fire({
-    //     icon: 'error',
-    //     title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.swalDefaultWarning').click(function() {
-    //   Toast.fire({
-    //     icon: 'warning',
-    //     title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.swalDefaultQuestion').click(function() {
-    //   Toast.fire({
-    //     icon: 'question',
-    //     title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
+          $('#example3').DataTable({
+              "paging": false,
+              "lengthChange": false,
+              "searching": false,
+              "ordering": true,
+              "info": false,
+              "autoWidth": false,
+              "responsive": true,
+          });
+      });
+  </script>
 
-    $('.toastrDefaultSuccess').click(function() {
-      toastr.success('Lorem ipsum dolor sit amet, consetetur sadipscing elitr.')
-    });
-    $('.toastrDefaultInfo').click(function() {
-      toastr.info('Lorem ipsum dolor sit amet, consetetur sadipscing elitr.')
-    });
-    $('.toastrDefaultError').click(function() {
-      toastr.error('Lorem ipsum dolor sit amet, consetetur sadipscing elitr.')
-    });
-    $('.toastrDefaultWarning').click(function() {
-      toastr.warning('Lorem ipsum dolor sit amet, consetetur sadipscing elitr.')
-    });
+  </body>
 
-    // $('.toastsDefaultDefault').click(function() {
-    //   $(document).Toasts('create', {
-    //     title: 'Toast Title',
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.toastsDefaultTopLeft').click(function() {
-    //   $(document).Toasts('create', {
-    //     title: 'Toast Title',
-    //     position: 'topLeft',
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.toastsDefaultBottomRight').click(function() {
-    //   $(document).Toasts('create', {
-    //     title: 'Toast Title',
-    //     position: 'bottomRight',
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.toastsDefaultBottomLeft').click(function() {
-    //   $(document).Toasts('create', {
-    //     title: 'Toast Title',
-    //     position: 'bottomLeft',
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.toastsDefaultAutohide').click(function() {
-    //   $(document).Toasts('create', {
-    //     title: 'Toast Title',
-    //     autohide: true,
-    //     delay: 750,
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.toastsDefaultNotFixed').click(function() {
-    //   $(document).Toasts('create', {
-    //     title: 'Toast Title',
-    //     fixed: false,
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.toastsDefaultFull').click(function() {
-    //   $(document).Toasts('create', {
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.',
-    //     title: 'Toast Title',
-    //     subtitle: 'Subtitle',
-    //     icon: 'fas fa-envelope fa-lg',
-    //   })
-    // });
-    // $('.toastsDefaultFullImage').click(function() {
-    //   $(document).Toasts('create', {
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.',
-    //     title: 'Toast Title',
-    //     subtitle: 'Subtitle',
-    //     image: '../../dist/img/user3-128x128.jpg',
-    //     imageAlt: 'User Picture',
-    //   })
-    // });
-    // $('.toastsDefaultSuccess').click(function() {
-    //   $(document).Toasts('create', {
-    //     class: 'bg-success',
-    //     title: 'Toast Title',
-    //     subtitle: 'Subtitle',
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.toastsDefaultInfo').click(function() {
-    //   $(document).Toasts('create', {
-    //     class: 'bg-info',
-    //     title: 'Toast Title',
-    //     subtitle: 'Subtitle',
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.toastsDefaultWarning').click(function() {
-    //   $(document).Toasts('create', {
-    //     class: 'bg-warning',
-    //     title: 'Toast Title',
-    //     subtitle: 'Subtitle',
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.toastsDefaultDanger').click(function() {
-    //   $(document).Toasts('create', {
-    //     class: 'bg-danger',
-    //     title: 'Toast Title',
-    //     subtitle: 'Subtitle',
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-    // $('.toastsDefaultMaroon').click(function() {
-    //   $(document).Toasts('create', {
-    //     class: 'bg-maroon',
-    //     title: 'Toast Title',
-    //     subtitle: 'Subtitle',
-    //     body: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
-    //   })
-    // });
-  });
-</script>
-
-</body>
-</html>
+  </html>
