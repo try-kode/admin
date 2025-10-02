@@ -10,6 +10,9 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
       </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <button class="btn btn-danger btnLogout" actionURL="/logout">Logout</button>
+      </li>
     </ul>
 
     <!-- Right navbar links -->

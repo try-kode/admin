@@ -39,7 +39,8 @@
                   data-accordion="false">
                   <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                  <li class="nav-item menu-open">
+               @if (session('user')['role'] != 'ADMIN')
+                   <li class="nav-item menu-open">
                       <a href="#" class="nav-link active">
                           <i class="nav-icon fas fa-tachometer-alt"></i>
                           <p>
@@ -60,8 +61,40 @@
                                   <p>Inactive Page</p>
                               </a>
                           </li>
+                          
                       </ul>
                   </li>
+                  
+                  <li class="nav-item">
+                      <a href="/product" class="nav-link">
+                          <i class="nav-icon fas fa-th"></i>
+                          <p>
+                              My Shop
+                              
+                          </p>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="/product" class="nav-link">
+                          <i class="nav-icon fas fa-th"></i>
+                          <p>
+                              Product
+                              <span class="right badge badge-danger">New</span>
+                          </p>
+                      </a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a href="/change_password" class="nav-link">
+                          <i class="nav-icon fas fa-cog"></i>
+                          <p>
+                              Setting
+                              
+                          </p>
+                      </a>
+                  </li>
+
                   <li class="nav-item">
                       <a href="#" class="nav-link">
                           <i class="nav-icon fas fa-th"></i>
@@ -71,8 +104,8 @@
                           </p>
                       </a>
                   </li>
-
-                  <li class="nav-item  {{ request()->is('admin/user**') ? 'menu-open' : ''}}  ">
+               @else
+                                     <li class="nav-item  {{ request()->is('admin/user**') ? 'menu-open' : ''}}  ">
                       <a href="#" class="nav-link">
                           <i class="nav-icon fas fa-tachometer-alt"></i>
                           <p>
@@ -95,6 +128,10 @@
                           </li>
                       </ul>
                   </li>
+               @endif
+                  
+
+
               </ul>
           </nav>
           <!-- /.sidebar-menu -->
