@@ -9,6 +9,7 @@ use App\Http\Middleware\IsAdmin;
 use App\Http\Middleware\IsUser;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
+use Phiki\Phast\Root;
 
 Route::get('/', function () {
     return view('welcome');
@@ -42,6 +43,9 @@ Route::middleware(CheckUserSession::class)->group(function () {
     Route::get('/product/create', [ProductController::class, 'create']);
 
     Route::get('/admin/ajxFetchAllUsers', [UserController::class, 'ajxFetchAllUsers']);
+
+    Route::get('/change_password', [UserController::class, 'change_password']);
+    Route::post('/ajxChangePassword', [UserController::class, 'ajxChangePassword']);
 
 });
 

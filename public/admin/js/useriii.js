@@ -139,3 +139,33 @@ $(document).on("click", ".btnLogout", function(){
         }
     })
 })
+
+$(document).on("click", ".btnChangePassword", function(e){
+    e.preventDefault();
+    $.ajax({
+        url: $(this).attr("actionURL"),
+        method: "POST",
+        data: {
+            currentPassword: $("#currentPassword").val(),
+            password: $("#password").val(),
+            password_confirmation: $("#password_confirmation").val()
+            
+        },
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success: function(response){
+            if(response.success == true){
+                toastr.success('<b>Notification</b><p>'+response.message+'</p>')
+                setTimeout(function() {
+                    window.location.href = response.redirectURL
+                }, 1500)
+            } else {
+                toastr.error('<b>Notification</b><p>'+response.message+'</p>')
+            }
+        },
+        error: function(error){
+            toastr.error('<b>Notification</b><p>'+error.responseJSON.message+'</p>')
+        }
+    })
+})
