@@ -56,7 +56,7 @@
   <script src="{{ asset('admin/dist/js/adminlte.min.js') }} "></script>
 
   <script src="{{ asset('admin/js/user.js') }} "></script>
-    <script src="{{ asset('admin/js/product.js') }} "></script>
+    <script src="{{ asset('admin/js/productii.js') }} "></script>
 
 
   <script>
