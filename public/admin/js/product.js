@@ -13,7 +13,8 @@ $(document).on("click", ".btnSaveProduct", function(e){
         image: $("#image").val(),
         categoryId: $("#category_id").val(),
         subCategoryId: $("#sub_category_id").val(),
-        storeId: "1"
+        storeId: $("#store_id").val(),
+        publisher: $("#publisher").val()
     }
     console.log(formData)
 

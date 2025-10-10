@@ -39,6 +39,8 @@ class AuthController extends Controller
 
         if ($response['data']) {
             Session::put('user', $response['data']);
+            Session::put('store', '5');
+            // Session::put('store', "1");
             $resp_arr = [
                 'message' => $response['message'],
                 'data' => $response['data'],

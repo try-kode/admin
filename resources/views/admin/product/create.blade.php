@@ -83,7 +83,8 @@
                                             
                                         </select>
                                     </div>
-                                    
+                                    <input type="hidden" name="store_id" id="store_id" value="{{ session('store') }}">
+                                    <input type="hidden" name="publisher" id="publisher" value="{{ session('user')['username'] }}">
                                     <a href="/product" class="btn btn-danger btn-flat">Cancel</a>
                                     <button class="btn btn-primary btn-flat btnSaveProduct">Create</button>
                                 </form>
